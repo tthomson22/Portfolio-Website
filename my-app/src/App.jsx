@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+
+import AboutMe from './contents/aboutme'
 
 function App() {
   return (
-    <div className="App">
-      App
+    <div>
+      <Routes>
+        <Route exact path='/' element={<AboutMe />} />
+      </Routes>
     </div>
   );
 }
